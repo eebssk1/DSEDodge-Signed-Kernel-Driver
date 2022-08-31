@@ -48,6 +48,22 @@ Locate `Demo_SPC_Code_Signing.cer` and `Demo_CA_Root.cer` on your `USB`, pressin
 
 The second time you press enter you'll be prompted to confirm you want to update the Certificate Store, Select `Yes`.
 
+------
+
+For some (subsets of) Insyde based UEFI, check the following.
+
+Click "Administrate Secure Boot" in the main menu.
+
+Scroll down and choose button includes "DB" (not DBX!!)
+
+Click "Enroll"
+
+Choose the cer file using the file browser(you can select only one, so you need to do it again for the other cer files)
+
+When it asks about Owner GUID, you can use anyone you like, just keep sure it's same across your cer files.
+
+Click okay and then "Exit saving changes" in the bottom.
+
 ### 5. Success, We are now an "Extended Validator" on this PC.
 
 The certificates you just added to the `BIOS` can now be used for "Extended Validation" of Kernel Drivers without using any exploits, essentially bypassing Driver Signing Enforcement (DSE) because there is no third party involved and you just sign it yourself without the extra steps.
