@@ -1,3 +1,4 @@
+[Not work on all of my laptops, use EfiGuard as fallback]
 ## Leveraging PTT to defeat DSE and run Kernel Drivers with Secure Boot Enabled
 
 ... With a Test Signing Certificate and No Extended Validation.
